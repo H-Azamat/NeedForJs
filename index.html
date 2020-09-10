@@ -8,11 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <audio class="game-audio" loop>
+        <source src="./audio/game.mp3" type="audio/mpeg">
+        Тег audio не поддерживается вашим браузером. 
+    </audio>
+    <audio class="gameOver-audio">
+        <source src="./audio/game over.mp3" type="audio/mpeg">
+        Тег audio не поддерживается вашим браузером. 
+    </audio>
+    <audio class="win-audio">
+        <source src="./audio/win.mp3" type="audio/mpeg">
+        Тег audio не поддерживается вашим браузером. 
+    </audio>
     
     <div class="score"></div>
+    <div class="best-score"></div>
     <div class="game">
         <div class="start">Чтобы начать игру кликни сюда</div>
         <div class="gameArea"></div>
+    </div>
+    
+    <div class="complexity hide">
+        <button class="easy" id="easy">Легкий</button>
+        <button class="normal" id="normal">Средний</button>
+        <button class="hard" id="hard">Сложный</button>
     </div>
 
     <script src="main.js"></script>

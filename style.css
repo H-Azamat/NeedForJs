@@ -50,7 +50,7 @@ table {
 }
 
 .hide{
-    display: none;
+    display: none !important;
 }
 
 .car, .enemy{
@@ -60,10 +60,6 @@ table {
     position: absolute;
     left: 125px;
     bottom: 10px;
-}
-
-.enemy{
-    background-image: url('./image/enemy2.png');
 }
 
 .gameArea{
@@ -81,3 +77,70 @@ table {
     background: #fff;
     left: 145px;
 }
+
+.start{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 18px;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    z-index: 200;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+    background:#FFC446;
+}
+
+.score{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #324DFF;
+}
+
+.best-score{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #55FFAA;
+}
+
+.complexity{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.complexity button{
+    font-size: 20px;
+    width: 250px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border: none;
+    color: #fff;
+}
+
+.easy{
+    background: #a5ff14;
+}
+
+.normal{
+    background: #ffda0a;
+}
+
+.hard{
+    background: #ff670f;
+}
+
