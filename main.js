@@ -134,7 +134,7 @@ const moveEnemy = () => {
             carRect.left <= enemyRect.right &&
             carRect.bottom >= enemyRect.top){
             setting.start = false;
-            localStorage.setItem('record', setting.score);
+            if (setting.score > bestRecord) localStorage.setItem('record', setting.score);
             gameAudio.pause();
             gameOverAudio.play();
 
